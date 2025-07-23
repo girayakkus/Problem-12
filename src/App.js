@@ -54,7 +54,6 @@ export default function Tabs() {
 
   return (
     <div className="max-w-2xl mx-auto my-8">
-      {/* Sekmeler */}
       <div className="flex justify-center space-x-6 mb-6" aria-label="Tabs">
         {tabs.map((tab) => (
           <button
@@ -71,13 +70,11 @@ export default function Tabs() {
         ))}
       </div>
 
-      {/* Aktif Sekme Bilgisi */}
       <p className="text-center mb-4 text-gray-700 font-semibold">
         Şu anda <span className="text-indigo-600">"{currentTab}"</span>{' '}
         sekmesindesiniz.
       </p>
 
-      {/* İçerik */}
       <div className="bg-white p-6 rounded shadow-md text-center">
         {renderContent()}
       </div>
